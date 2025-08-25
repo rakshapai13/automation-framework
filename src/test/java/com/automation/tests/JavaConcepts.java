@@ -1,5 +1,7 @@
 package com.automation.tests;
 
+import java.util.Scanner;
+
 public class JavaConcepts {
 
     public void reverseFunction()
@@ -30,6 +32,14 @@ public class JavaConcepts {
     }
     public static void main(String[] args) {
         System.out.println("Hello World!");
+        System.out.println("We will take input from user and print it");
+        Scanner sc=new Scanner(System.in);
+        String myString=sc.next();
+        int myInt=sc.nextInt();
+        sc.close();
+        System.out.println("My string is "+ myString);
+        System.out.println("My Integer is "+myInt);
+
         System.out.println("We are swapping 2 numbers with and without using 3rd variable");
         int a =10; int b=15;
         a=a+b; b=a-b; a=a-b;
